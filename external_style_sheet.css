@@ -1,0 +1,38 @@
+/* so we have linked this external css sheet to our html sheet vis link="stylesheet" and href 
+now we have to style the attributes that we require to change . */
+
+h1{
+    color: rgb(111, 3, 194);
+}
+
+/* u would have set an id to any particular tag , in ur .html file  
+   to particularily change that id's attributes we have do as follows :  */
+
+#p1_id{
+    background-color: black;
+    color: white;
+}   
+
+#p2_id{
+    background-color: chartreuse;
+    color: crimson;
+}
+
+#p4_id{
+    color: rgb(109, 3, 59);
+    background-color: darkviolet;
+}
+
+/*  to add attributes to a class we do it as follows :  */
+
+.class1{ /* . (followed by the class name */
+    color: darkgreen;
+    background-color: cyan;
+}
+
+
+.class2{ /* . (followed by the class name */
+    color: rgb(255, 115, 215);
+    background-color: rgb(0, 87, 87);
+}
+
