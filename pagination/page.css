@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    color:rgb(0, 216, 43);
+    display: block;
+    background-color: grey;
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    color:rgb(247, 247, 5);
+    display: block;
+    background-color: grey;
+    padding : 10px;
+}
+
+.pagination{
+    text-align: center;
+}
+
+
+.pagination a{
+    background-color: rgb(234, 231, 231);
+    text-decoration: none;
+    padding: 3px 10px;
+    display: inline-block;  /* helps create a distinction of the <a>'s present in the inline  */
+    border-radius: 5px;
+}
+
+
+.pagination a.active{
+    background-color: rgb(6, 216, 6);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.pagination a:hover:not(.active){
+    background-color: red;
+}
+
+

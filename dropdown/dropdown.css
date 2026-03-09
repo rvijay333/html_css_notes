@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: rgb(7, 135, 13);
+    background-color: rgb(23, 224, 255);
+}
+
+h2{
+    text-align: center;
+    color : goldenrod
+}
+
+.dropdown_box{
+    display: inline-block;
+}
+
+.dropdown_box button{
+    background-color: red;
+    padding : 10px 10px;
+}
+
+.dropdown_box button:hover{
+    background-color: greenyellow;
+}
+
+.dropdown_box a{
+    display: block;
+    color : orange;
+    padding: 10px 15px;
+    text-decoration: none;
+
+}
+
+.dropdown_box .contents_in_dropdown{
+    display:none;
+    position : absolute; 
+    margin: 5px;
+    
+}
+
+.dropdown_box:hover .contents_in_dropdown{
+    display:block
+}
+
+.dropdown_box a:hover{
+    background-color: rgb(240, 70, 121);
+}

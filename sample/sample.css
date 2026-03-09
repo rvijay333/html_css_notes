@@ -1,0 +1,36 @@
+head{
+    font-weight: bolder;
+    font-weight: 200;
+}
+
+h1{
+    font-family: cursive , Arial, Helvetica, sans-serif;
+    /* 1st choice = cursive , if that is not available we go to 2nd choice arial , 3rd helvetica and so on */
+
+    font-size: 33px;
+    /*we can also use "em" meaning that 1em = 100% . so 1.1em means 110% , and so on */
+
+    font-weight: bold;
+    font-style: italic;
+}
+
+.class1{
+    border-style:solid;
+    border-width:3.5px;
+    border-radius:10% ;
+    border-color: rgb(0, 179, 234);
+}
+
+h2{
+    text-shadow: 1.7px        2px        4px    red ;
+             /*  vertical  horizontal   blurr    color    */
+}
+
+#box1{
+    height: 170px;
+    width: 200px;
+    background-color: rgb(0, 225, 255);
+    color: rgb(133, 0, 0);
+    box-shadow: 3px 3px 5px darkblue;
+}
+

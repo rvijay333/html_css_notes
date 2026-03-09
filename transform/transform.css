@@ -1,0 +1,43 @@
+.div1{
+    display:flex;
+    gap:30px;
+}
+
+.hi{
+    height:150px;
+    width:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:20px;
+    border:2px solid black;
+
+    font-size: 3em;
+
+    background-color: rgb(28,254,28);
+
+    transform: translate(10px,30px);
+}
+
+.hi:hover{
+    background-color: rgb(34,197,252);
+}
+
+#hi1{
+    transform : rotate(180deg);
+}
+#hi2{
+    transform : rotateZ(45deg);
+}
+#hi3{
+    transform : scale(60%);
+}
+#hi4{
+    transform : skew(20deg , 10deg);
+}
+
+.hi:hover{
+    background-color: red;
+}
+

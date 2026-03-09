@@ -1,0 +1,60 @@
+
+h1{
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+
+
+
+#div1{
+    border-style: solid;
+    border-width: 0.3em;
+    height: 150px; width: 250px;
+    overflow:auto; /* this gives the scroll bar automatically as and when needed */
+    margin-left: auto; /* this line will automatically decide the amount of margin needed on the left meaning the div will appear to be stuck to right side*/
+    background-color:aqua ; color:black;
+ 
+}
+
+#div2{
+    border-style: solid;
+    border-width: 0.3em;
+    height: 150px; width: 250px;
+    overflow:auto; /* this gives the scroll bar automatically as and when needed */
+    margin-right: auto; /* this line will automatically decide the amount of margin needed on the right meaning the div will appear to be stuck to left side*/
+    background-color:chartreuse ; color:black;
+    
+}
+
+#div3{
+    border-style: solid;
+    border-width: 0.3em;
+    height: 150px; width: 250px;
+    overflow:auto; /* this gives the scroll bar automatically as and when needed */
+    margin: auto; /* this line willmake the div appear in center by auto deciding the amount of space needed on the both sides */
+    background-color:darkorange ; color:black;
+
+}
+
+span{
+    border-style: solid;
+    border-width: 0.3em;
+    height: 50px ; width: 70px;
+}
+
+/*
+
+DISPLAY attribute :
+display tells the browser how an element should appear and behave in the page layout.
+           |--->  block : A block element takes up the full width of the page and always starts on a new line.
+           |
+           |---> inline : An inline element only takes up as much width as needed and does not start a new line. its litteral meaning is inline and it is inline , thats it , takes up as much 
+display ---|
+           |---> none : completely hides the element , also takes no space 
+           |
+           |---> hidden : hides the element , ie ; element not visble , but space is still there
+
+
+*/
