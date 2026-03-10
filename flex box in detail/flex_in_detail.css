@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    background-color: red;
+}
+
+.container{
+    border: solid 2px;
+    display : flex; /*this makes everthing inside the body act as flex display*/
+    flex-direction: row;
+    justify-content: center;
+    min-height: 450px;;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box{ /* to apply flex on to the class box , i have to go to its parent , which is the contianer in this scenario*/
+
+    /*to align the text and number at the center of the box , we make 'box' class also as a flex type*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 150px;
+    width: 150px;
+    background-color: rgb(43, 160, 255);
+    font-size: 20px;
+    border : solid 3px darkblue;
+}
+

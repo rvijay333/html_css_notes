@@ -1,0 +1,108 @@
+in flex box concept;
+u need to understand , two axis : main and cross axis . 
+main = x axis 
+cross = y axis
+
+/* to apply flex on to the class box , i have to go to its parent , which is the 'container' class in this scenario*/
+
+                                                  |---> flex-start : to align at the start  of the main axis
+                                                  |---> flex-end : to align at the end of the main axis
+to position on the main axis => justify-content --|---> center : to align at the center of the main axis 
+                                                  |---> space-between : spaces evenly all the div's inside 
+
+
+                                                  |---> flex-start : to align at the start  of the main axis
+                                                  |---> flex-end : to align at the end of the main axis
+to position on the cross axis => align-items -----|---> center : to align at the center of the main axis 
+                                                  |---> ( many are mostly same , so i wont re write it here )
+
+1st iteration of the code :
+---------------------------------------------
+.container{
+    border: solid 2px;
+    display : flex; /*this makes everthing inside the body act as flex display*/
+    justify-content: center;
+    min-height: 450px;;
+    align-items: center;
+}
+
+.box{ /* to apply flex on to the class box , i have to go to its parent , which is the contianer in this scenario*/
+    height: 50px;
+    width: 50px;
+    background-color: rgb(43, 160, 255);
+    font-size: 20px;
+    border : solid 3px darkblue;
+}
+---------------------------------------------------
+
+flex-direction decides the orientation 
+
+
+                  |---> row
+                  |---> row-reverse
+flex-direction ---|---> column
+                  |---> colmn-reverse
+                  |--->
+------------------------
+2nd iteration of code :
+.container{
+    border: solid 2px;
+    display : flex; /*this makes everthing inside the body act as flex display*/
+    flex-direction: column;
+    justify-content: center;
+    min-height: 450px;;
+    align-items:center;
+    gap: 30px;
+}
+
+.box{ /* to apply flex on to the class box , i have to go to its parent , which is the contianer in this scenario*/
+    height: 50px;
+    width: 50px;
+    background-color: rgb(43, 160, 255);
+    font-size: 20px;
+    border : solid 3px darkblue;
+}
+------------------------
+
+
+
+               |---> wrap : allows wrapping , when website resizes , meaning => when window resized , contents move to new line 
+flex-wrap : ---|---> unwrap :no adjustment when website resized 
+
+---------------------------------------------
+3rd iteration : to check wrap 
+.container{
+    border: solid 2px;
+    display : flex; /*this makes everthing inside the body act as flex display*/
+    flex-direction: row;
+    justify-content: center;
+    min-height: 450px;;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box{ /* to apply flex on to the class box , i have to go to its parent , which is the contianer in this scenario*/
+    height: 150px;
+    width: 150px;
+    background-color: rgb(43, 160, 255);
+    font-size: 20px;
+    border : solid 3px darkblue;
+}
+----------------------------------------------
+
+ok so when u wrap , contents ie; boxes move into new rows
+assume 6 boxes => 3 in each row 
+
+so , the each set(3 box up and 3 dox down) has its own set of cross(y) axis
+so meaning, when we apply "align-item:" it gets applied to both the set separtely when the window remains shrunk
+
+to over come this , even when the window remains shrunk , ie , to access both rows at once , we use => align-content
+
+                                                  |---> 0 : wont shrink , will retain size when window resized
+                           |---> flex-shrink : ---|---> 1 : will shrink , ie; adjust the shrinking size , as window is resized 
+some important property ---|
+                           |---> flex-grow : ---|---> 0 : wont grow with window resizing 
+                                                |---> 1 : will grow with window resizing
+
+
+
